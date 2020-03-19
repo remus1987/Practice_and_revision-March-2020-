@@ -1,0 +1,13 @@
+﻿An array is a group of like-typed variables that are reffered to by a common name.
+Each data item is called an element of the array. The array can contain primitives
+data types as well as objects of a class depending on its definition.
+	Important Points To Remember About Arrays:
+	- In C#, all arrays are dinamically allocated;
+	- Since arrays are objects in C#, we can find their length using member length.
+	- A C# array variable can also be declared like other variables with [] after the data type.
+	- The variables in the array are ordered and each has an index beginning from 0'
+	- C# array is an object of base type System.Array.
+	- A jaged array elements are reference types and are initialized to null.
+	- Array elements can be of any type, including an array type.
+	- Array types are reference types which are derived from the abstract base type array.
+	These types implement IEnumerable and for it, they use foreach iteration on all arrays in C#.

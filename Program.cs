@@ -9,10 +9,10 @@ namespace Practice_March2020
         static void Main(string[] args)
         {
             Arrays inst = new Arrays();
-            inst.Weekdays();
+            inst.UseJoinSplit();
         }
     }
-
+    
     #region Interface 1
     interface IAnimal
     {
