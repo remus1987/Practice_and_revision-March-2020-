@@ -243,5 +243,66 @@ namespace Practice_March2020
             }
         }
         #endregion
+
+        //14
+        public void TemperatureConvertor(int celsius)
+        {
+            double kelvin, fahrenheit;
+            kelvin = celsius + 273.15;
+            fahrenheit = (celsius * 9 / 5) + 32;
+            Console.WriteLine($"{celsius} Celsius degrees equals {kelvin} Kelvin degrees");
+            Console.WriteLine($"{celsius} Celsius degrees equals {fahrenheit} Fahrenheit degrees");
+        }
+
+        //15
+        public string RemoveSpecifiedChar()
+        {
+            Console.WriteLine("Please Enter a string: ");
+            string strInput = Console.ReadLine();
+            if (strInput != "remus")
+            {
+                Console.WriteLine("Enter the character number to be removed: ");
+                int n = Convert.ToInt32(Console.ReadLine());
+                string strOutput = strInput.Remove(n, 1);
+                return strOutput;
+            }
+            else
+            {
+                return "Empty ! Please enter some string";
+            }
+            
+        }
+
+        #region Sum of the first 500 prime_numbers
+        public void SumOf500PrimeNo()
+        {
+            Console.WriteLine("\nSum of the first 500 prime numbers: ");
+            long sum = 0;
+            int ctr = 0;
+            int n = 2;
+            while (ctr < 500)
+            {
+                if (isPrime(n))
+                {
+                    sum += n;
+                    ctr++;
+                }
+                n++;
+            }
+            Console.WriteLine(sum.ToString());
+        }
+        public static bool isPrime (int n)
+        {
+            int x = (int)Math.Floor(Math.Sqrt(n));
+            if (n == 1) return false;
+            if (n == 2) return true;
+
+            for (int i = 2; i <= x; ++i)
+            {
+                if (n % i == 0) return false;
+            }
+            return true;
+        }
+        #endregion
     }
 }

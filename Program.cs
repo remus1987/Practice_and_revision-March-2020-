@@ -8,8 +8,7 @@ namespace Practice_March2020
        static List<Gripa> gripe = new List<Gripa>();
         static void Main(string[] args)
         {
-            Arrays inst = new Arrays();
-            inst.UseJoinSplit();
+           
         }
     }
     
