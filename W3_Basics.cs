@@ -304,5 +304,21 @@ namespace Practice_March2020
             return true;
         }
         #endregion
+
+        #region LargestAndLowest from 3 integers
+        public void LargestAndLowest()
+        {
+            Console.WriteLine("Enter first integer: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second integer: ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter third integer: ");
+            int num3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Largest of three is: " + Math.Max(num1, Math.Max(num2, num3)));
+            Console.WriteLine("Lowest of three is: " + Math.Min(num1, Math.Min(num2, num3)));
+
+
+        }
+        #endregion
     }
 }

@@ -8,7 +8,12 @@ namespace Practice_March2020
        static List<Gripa> gripe = new List<Gripa>();
         static void Main(string[] args)
         {
-           
+            W3_BasicAlgorithms obj = new W3_BasicAlgorithms();
+            Console.WriteLine(obj.NewStringPattern("a"));
+            Console.WriteLine(obj.NewStringPattern("ab"));
+            Console.WriteLine(obj.NewStringPattern("abc"));
+            Console.WriteLine(obj.NewStringPattern("abcd"));
+            Console.WriteLine(obj.NewStringPattern("abcde"));
         }
     }
     
